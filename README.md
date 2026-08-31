@@ -37,10 +37,6 @@ My involvement in this project included:
 
 [Visit Kuwalya Website](https://kuwalya.com)
 
-## Screenshots
-
-Screenshots of the website and selected pages will be added here.
-
 ## What I Learned
 
 Through this project, I developed experience in:
