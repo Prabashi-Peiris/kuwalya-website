@@ -1,0 +1,198 @@
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kuwalya Contact</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Noto+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #fef7ef;
+    color: #333;
+}
+
+.contact-section {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #fef7ef;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.contact-section h2,
+.contact-section h3 {
+    font-family: 'Playfair Display', serif;
+    color: #ac7e43;
+    margin-bottom: 15px;
+}
+
+/* ===== Social Grid ===== */
+.social {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.social a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 16px;
+    border-radius: 30px;
+    background: #ffffff;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    color: #5a4a3c;
+    text-decoration: none;
+}
+
+.social a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.social i {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #ac7e43;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+/* Hover colors */
+.social a:hover i.fa-instagram { background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7); }
+.social a:hover i.fa-facebook { background: #1877f2; }
+.social a:hover i.fa-linkedin { background: #0a66c2; }
+.social a:hover i.fa-tiktok { background: #000; }
+.social a:hover i.fa-whatsapp { background: #25d366; }
+.social a:hover i.fa-envelope { background: #ea4335; } /* email hover */
+.social a:hover i.fa-phone { background: #34b7f1; }
+
+.location-link-wrapper {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.location-link-wrapper a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 22px;
+    background-color: #ff5a5f;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+.location-link-wrapper a:hover {
+    background-color: #e04848;
+    transform: translateY(-2px);
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #ac7e43;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0 -4px 15px rgba(0,0,0,0.08);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+    margin-left: 5px;
+    font-weight: 500;
+}
+
+footer a:hover {
+    color: #fce7d0;
+    transition: color 0.3s ease;
+}
+
+footer::before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #fff3e6;
+    margin: 0 auto 20px auto;
+    border-radius: 2px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+    .social {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+<body>
+
+
+<section class="contact-section">
+    <h2>Contact Us</h2>
+    <div class="social">
+        <a href="https://wa.me/94778987007"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        <a href="tel:0778987007"><i class="fas fa-phone"></i> 077-898-7007</a>
+        <a href="mailto:kuwalya.info@gmail.com"><i class="fas fa-envelope"></i> kuwalya.info@gmail.com</a>
+    </div>
+
+    <h3>Lounge of Kuwalya</h3>
+    <div class="social">
+        <a href="https://www.linkedin.com/in/lounge-of-kuwalya-83ab47397/"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://www.facebook.com/LoungeOfKuwalya/"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="https://www.instagram.com/lounge_of_kuwalya"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://www.tiktok.com/@lounge_of_kuwalya"><i class="fab fa-tiktok"></i> TikTok</a>
+    </div>
+
+    <h3>Kuwalya Collection</h3>
+    <div class="social">
+        <a href="https://www.facebook.com/kuwalya.collection/"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="https://www.instagram.com/kuwalyacollections"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://www.tiktok.com/@kuwalya_collections"><i class="fab fa-tiktok"></i> TikTok</a>
+    </div>
+
+    <h3>Kuwalya Bridal</h3>
+    <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=61575149182125"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="https://www.instagram.com/kuwalya_bridals"><i class="fab fa-instagram"></i> Instagram</a>
+    </div>
+
+    <div class="location-link-wrapper">
+        <a href="https://maps.app.goo.gl/Nh6f2iQzfyDiJDeBA" target="_blank">📍 View Location</a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Kuwalya Pvt Ltd. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

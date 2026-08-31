@@ -1,0 +1,475 @@
+
+   <html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Other Projects | Kuwalya</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Noto+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+/*  Global Styles  */
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    background: linear-gradient(135deg, #fdf8f3, #fff0e5);
+    color: #3b2e28;
+}
+
+
+/*  Container  */
+
+.container {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 50px 30px;
+    background: rgba(255, 250, 244, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+
+
+/*  Headings  */
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+    color: #ac7e43;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+h1 {
+    font-size: 2.8em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+
+h2.subtitle {
+    font-size: 1.6em;
+    font-weight: 400;
+    color: #7a5e3a;
+    margin-bottom: 40px;
+}
+
+
+/*  Project Titles  */
+
+.project-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    color: #ac7e43;
+    text-align: center;
+    margin-top: 65px;
+    margin-bottom: 25px;
+}
+
+
+/*  Paragraphs  */
+
+p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #5a4a3c;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+
+/*  Credits  */
+
+.credits {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.credits p {
+    text-align: center;
+    font-size: 0.95em;
+    margin: 7px 0;
+    color: #7a5e3a;
+}
+
+
+.credits strong {
+    color: #5a4a3c;
+}
+
+
+/*  Clickable Credit Names  */
+
+.credits a {
+    color: #ac7e43;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+
+.credits a:hover {
+    color: #7a5e3a;
+    text-decoration: underline;
+}
+
+
+/*  Gallery  */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+
+.gallery img {
+    max-width: 200px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.gallery img:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+
+/*  Project Divider  */
+
+.project-divider {
+    width: 70%;
+    height: 1px;
+    background: #d8bd98;
+    margin: 70px auto 10px;
+    opacity: 0.55;
+}
+
+
+/*  Social Media Buttons  */
+
+.social {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+
+.social a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin: 8px 10px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: #fff;
+    color: #5a4a3c;
+    font-weight: 600;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+
+.social a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+
+.social i {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #ac7e43;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+
+.social a:hover i.fa-facebook {
+    background: #1877f2;
+}
+
+
+.social a:hover i.fa-instagram {
+    background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+}
+
+
+/*  Mobile Responsive  */
+
+@media (max-width: 600px) {
+
+    .container {
+        margin: 30px 15px;
+        padding: 35px 20px;
+    }
+
+    h1 {
+        font-size: 2.1em;
+    }
+
+    h2.subtitle {
+        font-size: 1.3em;
+    }
+
+    .project-title {
+        font-size: 1.7em;
+    }
+
+    p {
+        font-size: 1em;
+        text-align: left;
+    }
+
+    .credits p {
+        text-align: center;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery img {
+        max-width: 100%;
+    }
+
+    .social a {
+        margin: 6px 5px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div class="container">
+
+
+    <!-- MAIN TITLE -->
+
+    <h1>Other Projects</h1>
+
+    <h3 class="subtitle">
+        Exploring the creative work of Kuwalya beyond our main collections.
+    </h3>
+
+
+
+    <!-- PROJECT - Nā -->
+
+    <h2 class="project-title">
+        Project - Nā
+    </h2>
+
+
+    <p>
+        Inspired by the Nā Tree, Sri Lanka’s National Tree this creation blends heritage, nature, and contemporary masculine elegance.
+    </p>
+
+
+    <p>
+        Handwoven raw fabric forms the sarong and shirt, enriched with traditional pintuck detailing, gathered fabric and hand-painted Nā flowers and branches by a traditional artist. Patterned stitching, traditional Sri Lankan jewellery, and bespoke brass ornaments complete the ensemble.
+    </p>
+
+
+    <p>
+        The signature Nā flower brass ornaments, handcrafted exclusively by Kuwalya, bring a distinctive expression of Sri Lankan identity to the design.
+    </p>
+
+
+    <p>
+        A refined celebration of indigenous craftsmanship reimagined through contemporary fashion.
+    </p>
+
+
+    <!-- Nā Credits -->
+
+    <div class="credits">
+
+        <p>
+            <strong>Outfit Designer</strong>
+            <a href="https://www.instagram.com/kuwalya_bridals?igsi=cGZ6cmIwcjh1eDZs" target="_blank">
+                Kuwalya Bridals
+            </a>
+             |
+            <a href="https://www.instagram.com/lounge_of_kuwalya?igsi=ZzI5NG15YjFxMTQy&utm_source=qr" target="_blank">
+                Kuwalya
+            </a>
+        </p>
+
+
+        <p>
+            <strong>Captured by</strong>
+            <a href="https://www.instagram.com/studionoah.official?igsi=M2o5cTczbjA2a3o1" target="_blank">
+                Studio Noah Official
+            </a>
+        </p>
+
+    </div>
+
+
+    <!-- Nā Gallery -->
+
+    <div class="gallery">
+
+        <img src="na1.jpg" alt="Project Nā Image 1">
+
+        <img src="na2.jpg" alt="Project Nā Image 2">
+
+        <img src="na3.jpg" alt="Project Nā Image 3">
+
+    </div>
+
+
+    <!-- Nā Social Media -->
+
+    <div class="social">
+
+        <a href="https://www.facebook.com/share/p/1CR4nygCbh/" target="_blank">
+            <i class="fab fa-facebook"></i> Facebook
+        </a>
+
+        <a href="https://www.instagram.com/p/DZP-gl7EgnF/?igsi=MTYwZGt3aGdoNTlvMw==" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+
+    </div>
+
+
+
+    <!-- DIVIDER -->
+
+    <div class="project-divider"></div>
+
+
+
+    <!-- HADAMAL KUMARIYA -->
+
+    <h2 class="project-title">
+        හද මල් කුමරිය..
+    </h2>
+
+
+    <p>
+        Some flowers fade with the seasons. The Coral Vine leaves its beauty behind as inspiration.
+    </p>
+
+
+    <p>
+        Often overlooked as a wild vine, its heart-shaped blossoms remind us that true beauty simply blooms.
+    </p>
+
+
+    <p>
+        හද මල් කුමරිය is the first bloom of a story celebrating the timeless beauty of Sri Lankan women through the artistry of Sri Lankan craftsmanship.
+    </p>
+
+
+    <p>
+        Hand-painted on raw cotton, every brushstroke makes this Kandyan bridal creation truly one of a kind.
+    </p>
+
+
+    <!-- Hadamal Credits -->
+
+    <div class="credits">
+
+        <p>
+            <strong>Outfit Designer -</strong>
+            <a href="https://www.instagram.com/kuwalya_bridals?igsi=cGZ6cmIwcjh1eDZs" target="_blank">
+                Kuwalya Bridals
+            </a>
+            |
+            <a href="https://www.instagram.com/lounge_of_kuwalya?igsi=ZzI5NG15YjFxMTQy&utm_source=qr" target="_blank">
+                Kuwalya
+            </a>
+        </p>
+
+
+        <p>
+            <strong>Captured by -</strong>
+            <a href="https://www.instagram.com/studiofocuspointlk?igsi=Z2ptand1cnplMmd5" target="_blank">
+                Studio Focus Point
+            </a>
+        </p>
+
+
+        <p>
+            <strong>Juwellery -</strong>
+            <a href="https://www.instagram.com/gitanocollection?igsi=eXpqbmpvNzc1anFh" target="_blank">
+                Gitano Collection
+            </a>
+        </p>
+
+
+        <p>
+            <strong>HMUA -</strong>
+            <a href="https://www.instagram.com/enokabridal?igsi=MTJpcGVvNzV4YXoxMg==" target="_blank">
+                Enoka Bridal
+            </a>
+        </p>
+
+    </div>
+
+
+    <!-- Hadamal Gallery -->
+
+    <div class="gallery">
+
+        <img src="images/hadmal1.jpg"
+             alt="හද මල් කුමරිය Image 1">
+
+        <img src="hadmal2.jpg"
+             alt="හද මල් කුමරිය Image 2">
+
+        <img src="hadmal3.jpg"
+             alt="හද මල් කුමරිය Image 3">
+
+    </div>
+
+
+    <!-- Hadamal Social Media -->
+
+    <div class="social">
+
+        <a href="https://www.facebook.com/share/p/19Sna6F1rK/" target="_blank">
+            <i class="fab fa-facebook"></i> Facebook
+        </a>
+
+        <a href="https://www.instagram.com/p/Dbde4UWDKhx/?igsi=MTB0YjQ5ZDBudXBhdQ==" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+
+    </div>
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kuwalya</title>
+<link rel="icon" type="png" href="images/favicon_lotus.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Noto+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
+/* BODY */
+body {
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+  background: linear-gradient(to bottom, #EDE6DF, #E6DED6);
+}
+
+/* NAVBAR */
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding: 25px 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #A67C52;
+  font-size: 13px;
+  letter-spacing: 3px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  opacity: 0.6;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+
+/* LOGO */
+.logo {
+  width: 1000px;
+}
+
+/* TAGLINE */
+.tagline {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  letter-spacing: 4px;
+  color: #A67C52;
+  margin-top: 20px;
+}
+
+/* DIVIDER */
+.divider {
+  width: 60px;
+  height: 1px;
+  background: #A67C52;
+  margin: 20px auto;
+}
+
+/* LOTUS GLOW (VERY SUBTLE) */
+.lotus-glow {
+  position: absolute;
+  bottom: 40px;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, rgba(166,124,82,0.15), transparent);
+  border-radius: 50%;
+  animation: glow 5s ease-in-out infinite;
+}
+
+/* ANIMATION */
+@keyframes glow {
+  0% { transform: scale(0.9); opacity: 0.3; }
+  50% { transform: scale(1.2); opacity: 0.6; }
+  100% { transform: scale(0.9); opacity: 0.3; }
+}
+
+/* ===== Global Styles ===== */
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    background: linear-gradient(135deg, #fdf8f3, #fff0e5);
+    color: #3b2e28;
+    line-height: 1.7;
+}
+
+/* ===== Container / Section Styles ===== */
+section {
+    padding: 50px 30px;
+    max-width: 900px;
+    margin: 60px auto;
+    background: rgba(255, 250, 244, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+    overflow: hidden;
+}
+
+/* ===== Headings ===== */
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: #ac7e43;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* ===== Paragraphs ===== */
+p {
+    font-size: 1.1em;
+    color: #5a4a3c;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* ===== Bloom Image ===== */
+.bloom img {
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    margin: 25px auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bloom img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+/* ===== Subheading Styling for Mission ===== */
+section h3 {
+    font-family: 'Playfair Display', serif;
+    color: #ac7e43;
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+/* RESET */
+body {
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+/* NAVBAR - Glass Bubbles */
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 25px 0;
+  z-index: 10;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #ac8043;
+  font-size: 13px;
+  letter-spacing: 3px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.navbar a:hover {
+  background: rgba(255, 255, 255, 0.35);
+  transform: translateY(-3px);
+}
+
+/* HERO SECTION - Premium Luxury Background */
+.hero {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, #f8f2e2 0%, #efe4d6 100%) url('lotus.jpg') no-repeat center center/cover;
+}
+
+/* Luxury Texture Overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('https://www.transparenttextures.com/patterns/gold-paper.png') repeat;
+  opacity: 0.15; /* subtle golden shimmer */
+  z-index: 2;
+}
+
+/* Soft radial glow behind logo */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.1), transparent 70%);
+  z-index: 1;
+}
+
+/* HERO CONTENT */
+.hero-content {
+  position: relative;
+  z-index: 5;
+}
+
+.logo {
+  width: 100%;
+}
+
+.tagline {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  letter-spacing: 4px;
+  color: #ac8043;
+  margin-top: 20px;
+}
+
+@media (min-width: 100px) {
+  .hero {
+    background-attachment: fixed;
+  }
+}
+
+
+/* ===== Global Styles ===== */
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    background: linear-gradient(135deg, #fdf8f3, #fff0e5);
+    color: #3b2e28;
+}
+
+/* ===== Global Styles ===== */
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    background: linear-gradient(135deg, #fdf8f3, #fff0e5);
+    color: #3b2e28;
+    line-height: 1.7;
+}
+
+/* ===== Section Styling ===== */
+section {
+    padding: 50px 30px;
+    max-width: 900px;
+    margin: 60px auto;
+    background: rgba(255, 250, 244, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+    overflow: hidden;
+}
+
+/* ===== Headings ===== */
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: #ac7e43;
+    font-size: 2em;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* ===== Paragraphs ===== */
+p {
+    font-size: 1.1em;
+    color: #5a4a3c;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* ===== Gallery Styling ===== */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+/* ===== Bloom Image ===== */
+.bloom img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 25px auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bloom img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+
+
+/* ===== Optional: Subtle Accent Line ===== */
+section::before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #ac7e43;
+    margin: 0 auto 20px auto;
+    border-radius: 2px;
+}
+
+/* ===== Container ===== */
+.container {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 50px 30px;
+    background: rgba(255, 250, 244, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+
+/* ===== Headings ===== */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #ac7e43;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 2.8em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+h2.subtitle {
+    font-size: 1.6em;
+    font-weight: 400;
+    color: #7a5e3a;
+    margin-bottom: 40px;
+}
+
+/* ===== Paragraphs ===== */
+p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #5a4a3c;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* ===== Gallery ===== */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.gallery img {
+    max-width: 200px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* ===== Social Links ===== */
+.social {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.social a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin: 8px 10px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: #fff;
+    color: #5a4a3c;
+    font-weight: 600;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.social i {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #ac7e43;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.social a:hover i.fa-facebook { background: #1877f2; }
+.social a:hover i.fa-instagram { background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7); }
+
+/* ===== Global Styles ===== */
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    background: linear-gradient(135deg, #fdf8f3, #fff0e5);
+    color: #3b2e28;
+}
+
+/* ===== Container ===== */
+.container {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 50px 30px;
+    background: rgba(255, 250, 244, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+
+/* ===== Headings ===== */
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    color: #ac7e43;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h1 { font-size: 2.8em; font-weight: 700; letter-spacing: 1px; }
+h2 { font-size: 1.8em; font-weight: 600; margin-top: 40px; }
+
+/* ===== Paragraphs ===== */
+p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #5a4a3c;
+    margin-bottom: 20px;
+}
+
+/* ===== Highlight Box ===== */
+.highlight {
+    background: #fff8f1;
+    border-left: 5px solid #ac7e43;
+    padding: 20px 25px;
+    margin: 30px 0;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #fef7ef;
+    color: #333;
+}
+
+.contact-section {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #fef7ef;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.contact-section h2,
+.contact-section h3 {
+    font-family: 'Playfair Display', serif;
+    color: #ac7e43;
+    margin-bottom: 15px;
+}
+
+/* ===== Social Grid ===== */
+.social {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.social a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 16px;
+    border-radius: 30px;
+    background: #ffffff;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    color: #5a4a3c;
+    text-decoration: none;
+}
+
+.social a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.social i {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #ac7e43;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+/* Hover colors */
+.social a:hover i.fa-instagram { background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7); }
+.social a:hover i.fa-facebook { background: #1877f2; }
+.social a:hover i.fa-linkedin { background: #0a66c2; }
+.social a:hover i.fa-tiktok { background: #000; }
+.social a:hover i.fa-whatsapp { background: #25d366; }
+.social a:hover i.fa-envelope { background: #ea4335; } /* email hover */
+.social a:hover i.fa-phone { background: #34b7f1; }
+
+.location-link-wrapper {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.location-link-wrapper a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 22px;
+    background-color: #ff5a5f;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+.location-link-wrapper a:hover {
+    background-color: #e04848;
+    transform: translateY(-2px);
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #ac7e43;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0 -4px 15px rgba(0,0,0,0.08);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+    margin-left: 5px;
+    font-weight: 500;
+}
+
+footer a:hover {
+    color: #fce7d0;
+    transition: color 0.3s ease;
+}
+
+footer::before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #fff3e6;
+    margin: 0 auto 20px auto;
+    border-radius: 2px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+    .social {
+        grid-template-columns: 1fr;
+    }
+}
+
+</style>
+</head>
+<body>
+  <!-- NAVBAR -->
+<div class="navbar">
+ <a href="KuwalyaThreePages.html">KUWALYA</a>
+  <a href="Services.html">SERVICES</a>
+  <a href="Contact&Footer.html">CONTACT</a>
+</div>
+
+<!-- HERO -->
+<div>
+  <div class="hero-content">
+    <img src="images/kuwalyalogo.png" width="100%" alt="kuwalyalogo" class="logo">
+      </div>
+</div>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Noto+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- About Our Slogan: The Glory of Hundred Petals -->
+<section>
+ 
+   	<!-- Slogan Image -->
+    <div class="bloom">
+        <img src="images/kuwalyaslogan.png" alt="Kuwalya Slogan Image">
+    </div>
+    <p>The Glory of Hundred Petals” is inspired by Kuwalya, another name for the lotus. It symbolizes purity, resilience, and beauty reflecting the spirit of Sri Lanka’s rich culture and heritage. Each creation we craft becomes a petal in this story, celebrating our traditions, artistry, and the timeless elegance of Sri Lankan design.</p>
+</section>
+
+<!-- The Bloom of Your Bespoke Journey -->
+<section class="bloom">
+<h2>The Bloom of Your Bespoke Journey</h2>
+<div class="gallery">
+        <img src="images/image1.jpeg" alt="Basepoke 1">
+        <img src="images/image2.jpeg"alt="Basepoke 2">
+        <img src="images/image3.jpeg" alt="Basepoke 3">
+    </div>
+    
+    <p>our customized designs reflect your unique style and story. We make the process effortless wherever you are ensuring a perfect fit, bringing your vision to life with a blend of tradition, creativity, and fine craftsmanship.</p>
+       
+<!-- Lounge of Kuwalya -->
+<section>
+    <h2>Lounge of Kuwalya</h2>
+    <div class="gallery">
+        <img src="images/loungofkuwalya1.jpg" alt="Studio Image 1">
+        <img src="images/loungofkuwalya2.jpeg"alt="Studio Image 2">
+        <img src="images/loungofkuwalya3.jpeg" alt="Studio Image 3">
+    </div>
+    <p>The Lounge of Kuwalya is inspired by the charm of a colonial home, blending warmth, comfort, and quiet elegance. With soothing earth tones and a serene atmosphere, it offers a peaceful escape with private consultations and a tranquil deck overlooking nature. Designed for calm and connection, every visit feels like coming home.</p>
+</section>
+
+<!-- Kuwalya Bridal -->
+<section>
+    <h2>Kuwalya Bridal</h2>
+    <div class="gallery">
+        <img src="images/kuwalyabridal1.jpg" alt="Bridal Image 1">
+        <img src="images/kuwalyabridal2.jpg" alt="Bridal Image 2">
+        <img src="images/kuwalyabridal3.jpg" alt="Bridal Image 3">
+    </div>
+    <p>At Kuwalya, bridal and groom wear reflects heritage, individuality, and craftsmanship. Blending Sri Lankan tradition with modern silhouettes, luxurious fabrics, and handcrafted details like batik, Beeralu lace, and hand painting, each design is made in harmony—curated and custom pieces that tell your unique story with elegance.</p>
+</section>
+
+<!-- Kuwalya Collection -->
+<section>
+    <h2>Kuwalya Collection</h2>
+    <div class="gallery">
+        <img src="images/kuwalyacollections1.JPG"" alt="Kuwalya Collection Image 1">
+        <img src="images/kuwalyacollections2.JPG" alt="Kuwalya Collection Image 2">
+        <img src="images/kuwalyacollections3.jpg" alt="Kuwalya Collection Image 3">
+    </div>
+    <p>The Kuwalya Collection blends Sri Lankan heritage with contemporary elegance. Featuring batik, hand painting, and screen print techniques, each piece is thoughtfully crafted into modern, wearable designs. From festive to everyday wear, every creation reflects individuality, cultural pride, and refined style while showcasing local craftsmanship and tradition.</p>
+</section>
+
+
+<div class="container">
+    <h1>The Chronicles by Kuwalya </h1>
+    <h2 class="subtitle">නිරාකාර රූප The Art of Draping</h2>
+
+    <p>නිරාකාර රූප is a storytelling form of draping where each creation moves beyond structure and becomes a medium of expression. Through fluid design, texture, and movement, these pieces carry messages of strength, positivity, and quiet transformation.</p>
+
+    <p>This draping series invites viewers to experience garments not only as clothing but as narrative art. Each fold, pleat, and drape embodies emotion, intention, and personal storytelling, reflecting the journey of creativity and human expression.</p>
+
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <img src="images/kathirina1.png" alt="Draping Image 1">
+        <img src="images/kathirina2.jpeg" alt="Draping Image 2">
+        <img src="images/kathirina3.png" alt="Draping Image 3">
+    </div>
+
+    <div class="social">
+        <a href="https://www.facebook.com/share/p/1GQAiJLjHu/" target="_blank">
+            <i class="fab fa-facebook"></i> Facebook
+        </a>
+        <a href="https://www.instagram.com/p/DTh7b5FifbP/?igsh=NGl6MmJxeHh3ejBm" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+    </div>
+</div>
+<div class="container">
+    <h1>White Label Atelier</h1>
+
+    <p>White Label Atelier provides professional pattern making, grading, sample creation, and small-scale production services for other brands. Every piece is crafted with precision, care, and premium quality, ensuring your designs are realized exactly as envisioned.</p>
+
+    <div class="highlight">
+        <p>Whether you’re launching a limited collection, testing new designs, or scaling a small line, Kuwalya’s White Label Atelier delivers artisanal excellence and professional reliability, helping your brand shine.</p>
+    </div>
+</div>
+
+<section class="contact-section">
+    <h2>Contact Us</h2>
+    <div class="social">
+        <a href="https://wa.me/94778987007"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        <a href="tel:0778987007"><i class="fas fa-phone"></i> 077-898-7007</a>
+        <a href="mailto:kuwalya.info@gmail.com"><i class="fas fa-envelope"></i> kuwalya.info@gmail.com</a>
+    </div>
+
+    <h3>Lounge of Kuwalya</h3>
+    <div class="social">
+        <a href="https://www.linkedin.com/in/lounge-of-kuwalya-83ab47397/"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://www.facebook.com/LoungeOfKuwalya/"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="https://www.instagram.com/lounge_of_kuwalya"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://www.tiktok.com/@lounge_of_kuwalya"><i class="fab fa-tiktok"></i> TikTok</a>
+    </div>
+
+    <h3>Kuwalya Collection</h3>
+    <div class="social">
+        <a href="https://www.facebook.com/kuwalya.collection/"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="https://www.instagram.com/kuwalyacollections"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://www.tiktok.com/@kuwalya_collections"><i class="fab fa-tiktok"></i> TikTok</a>
+    </div>
+
+    <h3>Kuwalya Bridal</h3>
+    <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=61575149182125"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="https://www.instagram.com/kuwalya_bridals"><i class="fab fa-instagram"></i> Instagram</a>
+    </div>
+
+    <div class="location-link-wrapper">
+        <a href="https://maps.app.goo.gl/Nh6f2iQzfyDiJDeBA" target="_blank">📍 View Location</a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Kuwalya Pvt Ltd. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
