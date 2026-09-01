@@ -31,7 +31,7 @@ My involvement in this project included:
 
 - HTML
 - CSS
-- Wix
+  
 
 ## Live Website
 
